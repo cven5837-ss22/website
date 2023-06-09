@@ -1,12 +1,7 @@
 ---
-title: "Week"
-subtitle: ""
+title: "Add title"
+subtitle: "Add subtitle"
 editor: source
-params:
-    week: 0
-execute: 
-  echo: false
-  warning: false
 ---
 
 ## Learning Objectives

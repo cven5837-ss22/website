@@ -1,6 +1,6 @@
 ---
 title: "Week 4"
-subtitle: "Data transformation with dplyr"
+subtitle: "Concept of tidy data, vectors and pivoting"
 editor: source
 params:
     week: 4
@@ -9,38 +9,42 @@ execute:
   warning: false
 ---
 
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="cven5837-ss22.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
-## {{< fa bullseye >}} Learning Objectives
+## Learning Objectives
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |> 
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |> 
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
 ```
 
 1. `r lobj1[1]`
+2. `r lobj1[2]`
+3. `r lobj1[3]`
 
-## {{< fa display >}} Slides
+## Slides
 
-[Lecture 3 - Data transformation - HTML](/slides/lec-03-transformation.html) 
+`r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - HTML](/slides/lec-04-tidy-data.html) 
 
-[Lecture 3 - Data transformation - Download PDF](https://github.com/cven5873-ss23/website/raw/main/slides/lec-03-transformation.pdf)
+`r emo::ji("desktop_computer")` [Lecture 4 - Vectors & Tidy data - Download PDF](https://github.com/cven5837-ss22/website/raw/main/slides/lec-04-tidy-data.pdf)
 
-## {{< fa book >}} Readings
+## Readings
 
-Read [R for Data Science - Section 5 - Data transformation](https://r4ds.had.co.nz/transform.html)  
+`r emo::ji("book")` Read [R for Data Science - Section 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)  
 
-## {{< fa code >}} Homework assignment 
+`r emo::ji("book")` Read [R for Data Science - Section 15 - Factors](https://r4ds.had.co.nz/factors.html#factors)  
 
-Complete the homework programming assignments that are in your project folder for lecture 3 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
 
-- hw-03a-data-transformation.qmd 
 
-## {{< fa pen-clip >}} Learning reflection
+## Homework assignment
 
-Complete the learning reflection that is in your project folder for lecture 3 on [Posit Cloud](https://posit.cloud/spaces/381404/content/all)
+Complete the homework programming assignments that are in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all):
 
-- learning-03.qmd
+- hw-04a-tidyr.qmd 
+
+## Learning reflection
+
+Complete the learning reflection that is in your project folder for week 4 on [RStudio Cloud](https://rstudio.cloud/spaces/260187/content/all) (learning-04.qmd).  
