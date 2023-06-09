@@ -1,6 +1,6 @@
 ---
 title: "Concept of Tidy Data, Vectors & Pivoting"
-subtitle: "CVEN 5837 - Summer 2023"
+subtitle: "CVEN 5837 - Summer 2022"
 author: "Lars Schöbitz"
 format: 
   revealjs: 
@@ -8,15 +8,13 @@ format:
     transition: fade
     slide-number: true
     logo: img/logo.png
-    footer: "https://cven5873-ss23.github.io/website/"
+    footer: "https://cven5837-ss22.github.io/website/"
 editor: source
 execute:
   freeze: auto
 params:
-    week: 5
+    week: 4
 ---
-
-<script defer data-domain="cven5837-ss23.github.io/website" src="https://plausible.io/js/plausible.js"></script>
 
 
 ```{r}
@@ -153,7 +151,7 @@ waste_data_tidy |>
 
 ```{r}
 
-lobj1 <- readr::read_csv(here::here("data/tbl-02-cven5837-ss23-learning-objectives.csv")) |>
+lobj1 <- readr::read_csv(here::here("data/tab-01_rbtl-learning-objectives.csv")) |>
   dplyr::filter(week == params$week) |>
   dplyr::pull(learning_objectives)
 
@@ -621,7 +619,7 @@ waste_data_untidy |>
 ## 
 
 Slides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/ 
-Access slides as [PDF on GitHub](https://github.com/cven5873-ss23/website/raw/main/slides/lec-04-tidy-data.pdf)
+Access slides as [PDF on GitHub](https://github.com/cven5837-ss22/website/raw/main/slides/lec-04-tidy-data.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). 
 
